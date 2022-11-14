@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@font-face {
+    font-family: 'cordel';
+    src: url('../cordelina.otf') format('opentype');
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Permanent Marker', cursive;
+    --font3: 'Courgette', cursive;
+    --font4: 'Passion One', cursive;
+    --font5: 'cordel';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font4);
+}
+
+
+header {
+    position: relative;
+    background-color: rgb(197, 101, 149);
+    color: white;
+    text-align: center;
+    /* background-image: url(../imagens/cactus2.png); */
+}
+
+header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url(../imagens/cactus2.png);
+    background-position: 50% 0;
+    background-repeat: repeat;
+}
+
+header>h1 {
+    position: relative;
+    padding-top: 50px;
+    font-family: 'cordel';
+    font-size: 5em;
+}
+
+header>p {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 1.3em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 1.3em;
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+
+section.imagem>p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(63, 59, 76, 0.73);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.415);
+    border-radius: 10px;
+
+}
+
+#primeira {
+    background-image: url(../imagens/dentedeleao.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20em;
+}
+
+#segunda {
+    background-image: url(../imagens/coracao.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20em;
+}
+
+#terceira{
+    background-image: url(../imagens/flores.png);
+    background-position: 98% 98%;
+    background-repeat: no-repeat;
+    background-size: 15em;
+
+}
+
+section#img01 {
+    background-image: url('../imagens/flor2cortada.jpg');
+    background-position: right center;
+    background-size: cover;
+    box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.363);
+}
+
+section#img02 {
+    background-image: url('../imagens/carta1cortada.jpg');
+    background-position: right bottom;
+    background-size: cover;
+    box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.526);
+
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(84, 60, 84);
+    color: white;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: rgb(193, 109, 86);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
