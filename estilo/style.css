@@ -113,7 +113,7 @@ section.imagem>p {
     background-size: 20em;
 }
 
-#terceira{
+#terceira {
     background-image: url(../imagens/flores.png);
     background-position: 98% 98%;
     background-repeat: no-repeat;
@@ -152,4 +152,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .imagem {
+        background-attachment: scroll;
+    }
 }
